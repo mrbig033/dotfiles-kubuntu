@@ -7,6 +7,7 @@ export MANPAGER="nvim -c 'set ft=man' -"
 
 # MY ALIASES
 
+alias lo='sudo updatedb && locate'
 alias pk='pkill -fi'
 alias ep='clear && ps ax | grep --invert-match grep | grep emacs'
 alias py='clear && python3 -q'
