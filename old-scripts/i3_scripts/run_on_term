@@ -1,0 +1,5 @@
+#!/bin/bash
+
+i3-msg [title="term-ranger"] move scratchpad &>/dev/null &&
+i3-msg [title="term-up"] scratchpad show &>/dev/null &&
+xdotool key --clearmodifiers --delay 48 Ctrl+l Ctrl+a Ctrl+k Ctrl+Shift+v

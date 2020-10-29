@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# MY VARIABLES
+
+export PATH=$PATH:$HOME/maps/scripts
+export MANPAGER="nvim -c 'set ft=man' -"
+
+# MY ALIASES
+
+alias pk='pkill -fi'
+alias ep='clear && ps ax | grep --invert-match grep | grep emacs'
+alias py='clear && python3 -q'
+alias aw='/home/jones/maps/scripts/kbd/aw-script'
+alias a='cd ~/.doom.d && clear && ls'
+alias n='nvim'
+alias q='exit'
+alias ai='sudo apt-fast install -y'
+alias ar='sudo apt remove --purge '
+alias as='aptitude search'
+alias doom='/home/jones/.emacs.d/bin/doom'
+alias e='cd'
+alias ss='source ~/.bashrc'
+alias r='clear && cd -'
+alias ra='clear && ranger'
+alias c='clear'
+alias cc='clear && ls'
+alias w='cd .. && clear && ls'
+alias bc='clear && nvim ~/.bashrc ~/.bash_custom'
+alias bh='bash-it help'
+alias bi='bash-it'
+alias j='fasd_cd -d'
+alias tp='trash-put'
+alias restore='trash-restore'
+alias apu='clear && sudo apt -y update && sudo apt -y dist-upgrade && sudo apt -y autoremove && sudo apt -y autoclean'

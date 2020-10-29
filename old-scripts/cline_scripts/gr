@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+arg="emacs"
+clear
+sleep 0.3
+ps ax | grep -v  "bash.*grp" | grep -v  "bash.*gf" | grep -v grep | grep -i "$arg"

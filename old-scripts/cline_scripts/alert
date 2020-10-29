@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+clear
+play --no-show-progress /home/jerry/Sounds/apple.mp3

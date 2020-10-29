@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+file="${1:-foo}"
+
+emacs -q -nw --load "$HOME/.mini/init.el" "$file"

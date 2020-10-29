@@ -1,0 +1,23 @@
+! {{{ caps to control
+clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L Control_R
+! }}}
+! {{{ tab to alt
+keycode 64 = Tab
+keycode 23 = Alt_L
+! }}}
+! {{{ F10 to Shift
+! keycode 96 = Alt_R
+! keycode 108 = Pause
+! keycode 108 = space
+keycode 108 = Shift_L
+! keycode 50 =
+! keycode 50 = Shift_L
+!}}}
+!{{{ disable scroll lock
+keycode 78 = 
+! disable pause
+keycode 127 = 
+!}}}

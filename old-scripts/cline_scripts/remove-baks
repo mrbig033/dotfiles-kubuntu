@@ -1,0 +1,16 @@
+#!/bin/bash
+
+clear
+extension="$*"
+printf "\n   " &&
+    printf "\n   This could REALLY fuck up your system.\n\n" &&
+    read -rp "   PRESS ENTER TO CONTINUE" &&
+    read -rp "   ARE YOU SURE? " &&
+    read -rp "   LAST CHANCE " &&
+
+    sudo chmod a+x ./*
+sudo chown -Rhc "$USER" "$PWD"
+sudo chmod -Rc 755 "$PWD"
+sudo chmod -R g+s "$PWD"
+
+rm -rfv ./*."$extension"

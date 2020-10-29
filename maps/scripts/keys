@@ -1,0 +1,9 @@
+#!/bin/bash
+
+setxkbmap -option -layout br
+xmodmap "$PWD"/xmodmaps
+/home/jones/maps/scripts/xmodmaps
+pkill -fi xcape
+xcape -t 200 -e 'Control_L=Escape'
+# xcape -t 200 -e 'Alt_L=Tab'
+xset r rate 200 60

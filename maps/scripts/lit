@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+clear
+emacsclient --alternate-editor="" --create-frame  -nw "$*"
