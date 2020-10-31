@@ -11,3 +11,6 @@ add control = Control_L Control_R
 ! keycode 64 = Tab
 ! keycode 23 = Alt_L
 ! }}}
+
+! Pause to Alt_Gr
+keycode 108 = Pause

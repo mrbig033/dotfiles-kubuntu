@@ -7,6 +7,10 @@ export MANPAGER="nvim -c 'set ft=man' -"
 
 # MY ALIASES
 
+alias plasma-settings='clear && systemsettings5 &'
+alias da='clear && date'
+alias k='clear && xbindkeys -k'
+alias k9='clear && kill -9'
 alias lo='sudo updatedb && locate'
 alias pk='pkill -fi'
 alias ep='clear && ps ax | grep --invert-match grep | grep emacs'
