@@ -5,11 +5,36 @@
 export PATH=$PATH:$HOME/maps/scripts
 export MANPAGER="nvim -c 'set ft=man' -"
 
+# HOMEBREW
+
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+
+# FASD_CD
+
+# my function to execute built-in cd
+# fasd_cd() {
+#   if [ \$# -le 1 ]; then
+#     fasd "\$@"
+#     ls
+#   else
+#     local _fasd_ret="\$(fasd -e 'printf %s' "\$@")"
+#     [ -z "\$_fasd_ret" ] && return
+#     [ -d "\$_fasd_ret" ] && cd "\$_fasd_ret" || printf %s\\n "\$_fasd_ret"
+#   fi
+# }
+
 # MY ALIASES
 
+alias xc='echo -n "$PWD" | xclip -selection clipboard'
+alias h='hugo'
+alias wg='wget'
+alias d='dolphin . &'
+alias die='pkill -fi emacs'
+alias br='brew'
 alias plasma-settings='clear && systemsettings5 &'
 alias da='clear && date'
-alias k='clear && xbindkeys -k'
+alias key='clear && xbindkeys -k'
 alias k9='clear && kill -9'
 alias lo='sudo updatedb && locate'
 alias pk='pkill -fi'
@@ -20,20 +45,25 @@ alias a='cd ~/.doom.d && clear && ls'
 alias n='nvim'
 alias q='exit'
 alias ai='sudo apt-fast install -y'
-alias ar='sudo apt remove --purge '
+alias ais='sudo apt --simulate install -y'
+alias purge='sudo apt remove --purge '
 alias as='aptitude search'
 alias doom='/home/jones/.emacs.d/bin/doom'
-alias e='cd'
+alias ds='clear && /home/jones/.emacs.d/bin/doom sync'
+alias e='clear && pushd'
+alias b='clear && popd'
 alias ss='source ~/.bashrc'
 alias r='clear && cd -'
-alias ra='clear && ranger'
+alias ra='clear && ranger_cd'
 alias c='clear'
-alias cc='clear && ls'
+alias cc='clear && ls -A'
 alias w='cd .. && clear && ls'
 alias bc='clear && nvim ~/.bashrc ~/.bash_custom'
+alias nv='clear && nvim ~/.config/nvim/*vim'
 alias bh='bash-it help'
 alias bi='bash-it'
 alias j='fasd_cd -d'
 alias tp='trash-put'
 alias restore='trash-restore'
+alias poff='sudo shutdown -h now'
 alias apu='clear && sudo apt -y update && sudo apt -y dist-upgrade && sudo apt -y autoremove && sudo apt -y autoclean'
