@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
+arg=${1:-foo}
 clear
-emacsclient --alternate-editor="" --create-frame  -nw "$*"
+emacsclient --create-frame  -nw "$arg"

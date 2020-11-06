@@ -9,24 +9,22 @@ export MANPAGER="nvim -c 'set ft=man' -"
 
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-
-# FASD_CD
-
-# my function to execute built-in cd
-# fasd_cd() {
-#   if [ \$# -le 1 ]; then
-#     fasd "\$@"
-#     ls
-#   else
-#     local _fasd_ret="\$(fasd -e 'printf %s' "\$@")"
-#     [ -z "\$_fasd_ret" ] && return
-#     [ -d "\$_fasd_ret" ] && cd "\$_fasd_ret" || printf %s\\n "\$_fasd_ret"
-#   fi
-# }
+# cd and list
+e() {
+        local dir="$1"
+        local dir="${dir:=$HOME}"
+        if [[ -d "$dir" ]]; then
+                cd "$dir" >/dev/null; clear; ls --color=auto
+        else
+                echo "bash: cdls: $dir: Directory not found"
+        fi
+}
 
 # MY ALIASES
 
+alias k='/home/jones/dotfiles/maps/scripts/k'
 alias xc='echo -n "$PWD" | xclip -selection clipboard'
+alias ko='kill -9'
 alias h='hugo'
 alias wg='wget'
 alias d='dolphin . &'
@@ -50,8 +48,6 @@ alias purge='sudo apt remove --purge '
 alias as='aptitude search'
 alias doom='/home/jones/.emacs.d/bin/doom'
 alias ds='clear && /home/jones/.emacs.d/bin/doom sync'
-alias e='clear && pushd'
-alias b='clear && popd'
 alias ss='source ~/.bashrc'
 alias r='clear && cd -'
 alias ra='clear && ranger_cd'
