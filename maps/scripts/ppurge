@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+clear
+sudo apt remove --purge "$*" && 
+    sudo apt -y autoremove && 
+    sudo apt -y autoclean

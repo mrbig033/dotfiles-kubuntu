@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 
 clear
-sudo chown --recursive --changes root \
-"$HOME"/.doom.d/*.el                  \
-"$HOME"/.doom.d/lisp/kbds/*.el \
-"$HOME"/.doom.d/lisp/settings/*.el    \
+sudo chown --recursive --changes root "$HOME"/.doom.d/*.el "$HOME"/.doom.d/config.org

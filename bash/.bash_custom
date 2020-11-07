@@ -3,11 +3,13 @@
 # MY VARIABLES
 
 export PATH=$PATH:$HOME/maps/scripts
+export PATH=$PATH:$HOME/.nimble/bin
+
 export MANPAGER="nvim -c 'set ft=man' -"
 
 # HOMEBREW
 
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # cd and list
 e() {
@@ -22,6 +24,7 @@ e() {
 
 # MY ALIASES
 
+alias ed='clear && emacs --debug-init'
 alias k='/home/jones/dotfiles/maps/scripts/k'
 alias xc='echo -n "$PWD" | xclip -selection clipboard'
 alias ko='kill -9'
@@ -42,9 +45,9 @@ alias aw='/home/jones/maps/scripts/kbd/aw-script'
 alias a='cd ~/.doom.d && clear && ls'
 alias n='nvim'
 alias q='exit'
+alias only-owner='chmod go-rwx'
 alias ai='sudo apt-fast install -y'
 alias ais='sudo apt --simulate install -y'
-alias purge='sudo apt remove --purge '
 alias as='aptitude search'
 alias doom='/home/jones/.emacs.d/bin/doom'
 alias ds='clear && /home/jones/.emacs.d/bin/doom sync'
