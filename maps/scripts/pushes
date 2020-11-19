@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+git -C "$HOME"/.doom.d/ push
+git -C "$HOME"/Dropbox/ pusH

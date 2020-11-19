@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-urls="$*"
-clear
-youtube-dl --sub-lang en,pt,pt-br "$urls"

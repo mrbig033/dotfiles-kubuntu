@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/jones/.texpander'
 let g:netrw_dirhist_7='/home/jones/.config/autostart'
 let g:netrw_dirhist_6='/media/jerry/h1/dotfiles/scripts/cline_scripts'
 let g:netrw_dirhist_5='/home/jerry/dotfiles/scripts/keyboard/keyboard-default'

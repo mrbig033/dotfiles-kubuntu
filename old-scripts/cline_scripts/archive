@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-source="$1"
-destination="$2"
-
-rsync --archive --verbose --human-readable "$source" "$destination"

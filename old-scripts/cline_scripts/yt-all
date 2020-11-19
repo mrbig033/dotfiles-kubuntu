@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-urls="$*"
-
-clear
-youtube-dl --all-subs "$urls"

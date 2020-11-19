@@ -1,6 +1,0 @@
-#!/bin/bash
-arg1="$1"
-echo ""
-# sudo du -sh "$arg1" | sort -nsr
-sudo du -sh "$arg1" | sort -nsr
-echo ""

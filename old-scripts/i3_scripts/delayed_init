@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-pulseaudio
-dropbox start
-unclutter -display :0.0 -idle 1.0

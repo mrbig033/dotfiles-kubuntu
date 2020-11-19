@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-search_term="$*"
-clear
-echo ""
-"$HOME"/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks | grep "$search_term"
-echo ""

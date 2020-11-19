@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-tmux switch-client -t ranger || tmux -L ranger attach || tmux -L ranger

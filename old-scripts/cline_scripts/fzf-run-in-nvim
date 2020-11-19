@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-fzf --bind 'ctrl-m:execute(nvim {}),ctrl-y:execute-silent(echo {} | pbcopy)+abort'

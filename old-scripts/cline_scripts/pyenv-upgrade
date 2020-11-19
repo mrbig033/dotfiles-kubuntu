@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-source "$HOME"/scripts/cline_scripts/cd-pyenv
-git pull

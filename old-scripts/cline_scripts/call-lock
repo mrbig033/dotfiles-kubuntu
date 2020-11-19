@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-python3 /home/jerry/scripts/python/lock-emacs.py

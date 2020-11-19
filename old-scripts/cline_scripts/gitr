@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-function git-res () {
-    commit="$(xclip -out -selection clipboard)"
-    git fetch --all && git reset --hard "($commit)"
-}

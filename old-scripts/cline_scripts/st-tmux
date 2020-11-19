@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-st -e tmux attach || new-session -A -s 0

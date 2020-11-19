@@ -191,8 +191,8 @@ nnoremap <c-m-i> ggVGp:wqa!<cr>
 
  nnoremap <silent> <tab> :silent execute "normal! za"<cr>
 
-nnoremap <silent> <c-M-p> :silent bprev<cr><c-\><c-n>:echo ""<cr>
-nnoremap <silent> <c-M-n> :silent bnext<cr><c-\><c-n>:echo ""<cr>
+nnoremap <silent> <c-P> :silent bprev<cr><c-\><c-n>:echo ""<cr>
+nnoremap <silent> <c-N> :silent bnext<cr><c-\><c-n>:echo ""<cr>
 
 nmap ga <Plug>Titlecase
 vmap ga <Plug>Titlecase

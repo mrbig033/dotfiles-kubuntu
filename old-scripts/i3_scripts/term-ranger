@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-# xfce4-terminal --title=term-ranger --command="\"$HOME\"/scripts/i3_scripts/tmux-ranger"
-xfce4-terminal --title=term-ranger --command='ranger'
-
-
