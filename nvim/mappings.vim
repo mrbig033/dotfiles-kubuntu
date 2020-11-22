@@ -208,7 +208,8 @@ nnoremap <m-return> mZgg=G`Z
 " }}}
 " {{{ searching
 nnoremap <M-d> :b<space>
-nnoremap <c-s> /\v
+nnoremap <c-s> /
+" nnoremap <c-s> /\v
 " }}}
 " {{{ narrow
 xmap <leader>n <Plug>NrrwrgnDo
