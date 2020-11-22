@@ -5,7 +5,7 @@ rofi.theme: /usr/share/rofi/themes/gruvbox-dark.rasi
 rofi.kb-row-up:                      Super+p,Up,Control+p,ISO_Left_Tab
 
 ! "Select next entry" Set from: Default
-rofi.kb-row-down:                    Super+n,Super+apostrophe,Down,Control+n
+rofi.kb-row-down:                    Super+n,Control+n,Down
 
 ! "Go to next row, if one left, accept it, if no left next mode." Set from: Default
 rofi.kb-row-tab:                     Tab,Super+Tab,Super+apostrophe
