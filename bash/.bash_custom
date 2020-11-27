@@ -43,6 +43,7 @@ alias ep='clear && ps ax | grep --invert-match grep | grep emacs'
 alias py='clear && python3 -q'
 alias aw='/home/jones/maps/scripts/kbd/aw-script'
 alias a='cd ~/.doom.d && clear && ls'
+alias x='cd ~/Dropbox && clear && ls'
 alias n='nvim'
 alias q='exit'
 # source https://stackoverflow.com/a/28887243/9509067
