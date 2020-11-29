@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+/home/jones/dotfiles/maps/scripts/k
+emacs --eval \(my-emacs-session-init\)

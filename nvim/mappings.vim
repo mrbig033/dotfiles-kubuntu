@@ -135,6 +135,9 @@ nnoremap <silent> <leader>k :silent bd!<cr>
 
 " }}}
 "{{{ emacs like
+" kills
+nnoremap <c-k> C
+inoremap <c-k> <c-o>C
 " goto mark
 nnoremap ' `
 nnoremap ` '
